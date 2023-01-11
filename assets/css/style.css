@@ -1,0 +1,12 @@
+body,
+button {
+  color: #742305;
+}
+header,
+article {
+  background-color: #fef7e2;
+}
+nav li,
+.addCart {
+  background-color: #ffdf7f;
+}
