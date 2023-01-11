@@ -1,12 +1,97 @@
 body,
 button {
   color: #742305;
+  font-family: Lato, sans-serif;
 }
 header,
-article {
+article,
+.product {
   background-color: #fef7e2;
 }
 nav li,
 .addCart {
   background-color: #ffdf7f;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.logo {
+  height: 1.5em;
+  margin-right: 0.5em;
+}
+header {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 12%;
+  padding: 15px;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav li {
+  padding: 17px 20px;
+  width: 35%;
+  border-radius: 15% / 50%;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+nav li:first-child {
+  width: 75%;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 900;
+  margin: 30px auto;
+  padding: 10px 10px;
+}
+h5 {
+  text-align: center;
+  font-weight: 600;
+}
+h6 {
+  text-align: center;
+}
+.bestSelling {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product {
+  width: 85%;
+  max-width: 350px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prodImg img {
+  width: 100%;
+  border-radius: 10% / 10%;
+}
+.prodDesc {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.addCart {
+  border: none;
+  padding: 10px 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 30px;
 }
