@@ -223,3 +223,23 @@ article h3,
     width: 13vw;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .product {
+    display: none;
+  }
+  .product:nth-child(1),
+  .product:nth-child(2) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1392px) {
+  .product:nth-child(3) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1850px) {
+  .product:nth-child(4) {
+    display: flex;
+  }
+}
