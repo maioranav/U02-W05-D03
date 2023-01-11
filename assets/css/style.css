@@ -80,6 +80,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 10px;
 }
 .prodImg img {
   width: 100%;
@@ -119,4 +120,81 @@ article {
 .artContent {
   line-height: 1.3em;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    position: sticky;
+    width: unset;
+    margin: 0;
+    top: 0;
+    border-radius: unset;
+  }
+  nav li,
+  nav li:first-child {
+    width: unset;
+  }
+  nav ul {
+    align-items: center;
+  }
+  nav li:nth-child(2),
+  nav li:nth-child(3) {
+    order: 1;
+  }
+  nav li:nth-child(4),
+  nav li:nth-child(5) {
+    order: 3;
+  }
+  nav li:first-child {
+    order: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    position: fixed;
+    height: 100vh;
+    float: left;
+    left: 0;
+    top: 0;
+    width: 15vw;
+    margin: 0;
+    border-radius: unset;
+  }
+  nav ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  nav li,
+  nav li:first-child {
+    width: 75%;
+    padding: 30px 20px;
+  }
+  main {
+    width: 82vw;
+    float: right;
+  }
+  .bestSelling {
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .product {
+    width: 350px;
+    height: 370px;
+    max-width: unset;
+  }
+  .prodImg img {
+    width: 350px;
+  }
+  article {
+    width: 90%;
+    margin-left: 30px;
+  }
+  h2 {
+    width: 90%;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 30px;
+  }
 }
