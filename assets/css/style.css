@@ -1,3 +1,4 @@
+/* da 383px */
 body,
 button {
   color: #742305;
@@ -121,6 +122,13 @@ article {
   line-height: 1.3em;
   margin-bottom: 15px;
 }
+article h3,
+.artContent {
+  order: 1;
+}
+.artImg {
+  order: 2;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   header {
@@ -196,5 +204,22 @@ article {
     text-align: left;
     margin-left: 0;
     padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .article {
+    display: unset;
+  }
+  .artImg {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+  }
+  main {
+    width: 85vw;
+  }
+  header {
+    width: 13vw;
   }
 }
